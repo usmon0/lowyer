@@ -129,6 +129,14 @@ button {
   gap: 8px;
   width: 1090px;
 }
+.description__text {
+  color: #FFF;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  text-transform: uppercase;
+}
 .description p {
   color: #FFF;
   text-align: center;
