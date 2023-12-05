@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: $main-text-color;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+button {
+  background: 0;
+  border: 0;
+  cursor: pointer;
+}

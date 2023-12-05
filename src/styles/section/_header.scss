@@ -1,0 +1,89 @@
+.header {
+  &__top{
+    padding: 16px 0;
+    background: #010101;
+  }
+
+
+  &__wrapper{
+    @include flex-row-sb-aic;
+  }
+
+  
+
+  &__contacts {
+    @include flex-row-aic;
+    gap:24px;
+  }
+
+  &__callme {
+    color:$accent-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+
+  &__bottom {
+    height: 112px;
+    background: rgba(1, 1, 1, 0.76);
+    position: absolute;
+    width: 100%;
+  }
+
+
+  & .hb {
+    height: 112px;
+  }
+
+}
+
+.header-nav  {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.header-nav a:hover {
+  color: $accent-color;
+  text-decoration: underline;
+
+}
+
+.header-name {
+  display: flex;
+  width: 312px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: -10px;
+}
+
+.site-name {
+  display: flex;
+  width: 312px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-name h1 {
+  color: $accent-color;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.site-name h2 {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: lowercase;
+}

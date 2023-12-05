@@ -1,0 +1,20 @@
+.contact-link {
+  @include flex-row-aic;
+  gap:8px;
+  color: #fff;
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+  &__icon path {
+    fill: $accent-color;
+  }
+
+
+    
+
+
+  &:hover {
+    color: darken(#fff , 15) ;
+  }
+}
