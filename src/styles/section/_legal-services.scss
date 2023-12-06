@@ -3,14 +3,25 @@
   height: 820px;
   display: flex;
   align-items: center;
+
+  
+}
+
+.tio {
+  position: relative;
 }
 
 .description {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  width: 1090px;
+  margin-top: 150px;
+  max-width: 1090px;
+  margin-left: auto;
+  margin-right: auto;
+
+
 
   &__text {
     color: #FFF;
@@ -59,4 +70,127 @@
     line-height: 120%;
     text-transform: uppercase;
   }
+}
+
+
+
+.slider {
+  display: flex;
+  width: 1320px;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  margin-top: 192px;  
+  
+
+  &__left {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    width: 28px;
+
+    &__1  {
+      width: 4px;
+      height: 40px;
+      background: $accent-color;
+    }
+
+    &__2 {
+      width: 4px;
+      height: 24px;
+      background:  #E6E6E6;
+      
+    }
+
+    &__3 {
+      width: 4px;
+      height: 24px;
+      background:  #E6E6E6;
+      
+    }
+
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    bottom: 40pxs;
+
+
+    &__line {
+      width: 32px;
+      height: 2px;
+      background: #E6E6E6;
+      transform: rotate(110deg);
+    }
+  }
+}
+
+
+
+.service {
+  
+  width: 1320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+
+
+  & svg {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+  }
+
+  & h2 {
+    color:  #222;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    text-transform: uppercase;
+  }
+
+  & p{
+    display: flex;
+    text-align: center;
+    color: #222;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+
+  &__center {
+    max-width: 1320px;
+    height: 538px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+
+
+  &__card {
+    &:hover {
+        background: $accent-color;
+        text-emphasis-color: #fff;
+      }
+
+    display: flex;
+    width: 424px;
+    height: 250px;
+    padding: 50px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    background: #FFF;
+  }
+
+
 }

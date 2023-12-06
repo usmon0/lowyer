@@ -12,6 +12,7 @@ html {
 body {
   font-family: "Nunito Sans", sans-serif;
   color: #222;
+  background: #F7F7F7;
 }
 
 ul, ol {
@@ -122,12 +123,19 @@ button {
   align-items: center;
 }
 
+.tio {
+  position: relative;
+}
+
 .description {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  width: 1090px;
+  margin-top: 150px;
+  max-width: 1090px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .description__text {
   color: #FFF;
@@ -171,6 +179,102 @@ button {
   font-weight: 900;
   line-height: 120%;
   text-transform: uppercase;
+}
+
+.slider {
+  display: flex;
+  width: 1320px;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  margin-top: 192px;
+}
+.slider__left {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  width: 28px;
+}
+.slider__left__1 {
+  width: 4px;
+  height: 40px;
+  background: #4f8ff0;
+}
+.slider__left__2 {
+  width: 4px;
+  height: 24px;
+  background: #E6E6E6;
+}
+.slider__left__3 {
+  width: 4px;
+  height: 24px;
+  background: #E6E6E6;
+}
+.slider__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  bottom: 40pxs;
+}
+.slider__right__line {
+  width: 32px;
+  height: 2px;
+  background: #E6E6E6;
+  transform: rotate(110deg);
+}
+
+.service {
+  width: 1320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.service svg {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+.service h2 {
+  color: #222;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.service p {
+  display: flex;
+  text-align: center;
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.service__center {
+  max-width: 1320px;
+  height: 538px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.service__card {
+  display: flex;
+  width: 424px;
+  height: 250px;
+  padding: 50px 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+  background: #FFF;
+}
+.service__card:hover {
+  background: #4f8ff0;
+  -webkit-text-emphasis-color: #fff;
+          text-emphasis-color: #fff;
 }
 
 .contact-link {
