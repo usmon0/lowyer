@@ -30,6 +30,15 @@ button {
   cursor: pointer;
 }
 
+h3 {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -123,22 +132,18 @@ button {
   align-items: center;
 }
 
-.tio {
-  position: relative;
-}
-
 .description {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  margin-top: 150px;
+  margin-top: 250px;
   max-width: 1090px;
   margin-left: auto;
   margin-right: auto;
 }
 .description__text {
-  color: #FFF;
+  color: #fff;
   font-size: 30px;
   font-style: normal;
   font-weight: 300;
@@ -146,7 +151,7 @@ button {
   text-transform: uppercase;
 }
 .description p {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 20px;
   font-style: normal;
@@ -171,8 +176,11 @@ button {
   border: #4f8ff0;
   background: #4f8ff0;
 }
+.button:hover a {
+  color: #4f8ff0;
+}
 .button a {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -203,12 +211,12 @@ button {
 .slider__left__2 {
   width: 4px;
   height: 24px;
-  background: #E6E6E6;
+  background: #e6e6e6;
 }
 .slider__left__3 {
   width: 4px;
   height: 24px;
-  background: #E6E6E6;
+  background: #e6e6e6;
 }
 .slider__right {
   display: flex;
@@ -219,32 +227,46 @@ button {
 .slider__right__line {
   width: 32px;
   height: 2px;
-  background: #E6E6E6;
+  background: #e6e6e6;
   transform: rotate(110deg);
 }
 
 .service {
   width: 1320px;
+  max-height: 538px;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin-top: 40px;
+  margin-top: 48px;
 }
-.service svg {
-  width: 35px;
-  height: 35px;
-  flex-shrink: 0;
+.service .line {
+  width: 50px;
+  height: 3px;
+  background: #4f8ff0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.service h2 {
+.service__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service__title h2 {
   color: #222;
+  text-align: center;
   font-size: 28px;
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
   text-transform: uppercase;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
 }
-.service p {
+.service .info {
   display: flex;
   text-align: center;
   color: #222;
@@ -252,6 +274,7 @@ button {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  margin-top: 43px;
 }
 .service__center {
   max-width: 1320px;
@@ -259,8 +282,10 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  margin-top: 48px;
 }
 .service__card {
+  transition: 0.3s;
   display: flex;
   width: 424px;
   height: 250px;
@@ -269,12 +294,133 @@ button {
   align-items: center;
   gap: 15px;
   flex-shrink: 0;
-  background: #FFF;
+  background: #fff;
+  position: relative;
+}
+.service__card:hover path {
+  fill: #fff;
+}
+.service__card:hover .card_text {
+  color: #fff;
+}
+.service__card:hover .card_text p {
+  color: #fff;
 }
 .service__card:hover {
   background: #4f8ff0;
   -webkit-text-emphasis-color: #fff;
           text-emphasis-color: #fff;
+}
+.service__card p {
+  display: flex;
+  text-align: center;
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.card_text h3 {
+  display: flex;
+  margin: 0 auto;
+}
+
+.card_icon {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.card_icon:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+
+.service__card:hover .corner_tl {
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #fff;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 35px;
+  height: 35px;
+}
+.service__card:hover .corner_tr {
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+}
+.service__card:hover .corner_bl {
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 35px;
+  height: 35px;
+}
+.service__card:hover .corner_br {
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+}
+
+.button {
+  display: flex;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  height: 49px;
+  justify-content: center;
+}
+.button:hover {
+  display: inline-flex;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 2px solid #4f8ff0;
+  background: #fff;
+  transition: 0.3s;
+}
+.button:hover p {
+  color: #4f8ff0;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.button p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.service__card:hover .card_text {
+  transform: scale(1.04);
+  transition: 0.5s;
 }
 
 .contact-link {
