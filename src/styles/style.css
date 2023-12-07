@@ -50,6 +50,9 @@ h3 {
   padding: 16px 0;
   background: #010101;
 }
+.header svg path {
+  fill: #4F8FF0;
+}
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -61,11 +64,14 @@ h3 {
   gap: 24px;
 }
 .header__callme {
-  color: #4f8ff0;
+  color: #4F8FF0;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+}
+.header__callme:hover {
+  text-decoration: underline;
 }
 .header__bottom {
   height: 112px;
@@ -88,7 +94,7 @@ h3 {
 }
 
 .header-nav a:hover {
-  color: #4f8ff0;
+  color: #4F8FF0;
   text-decoration: underline;
 }
 
@@ -108,7 +114,7 @@ h3 {
 }
 
 .site-name h1 {
-  color: #4f8ff0;
+  color: #4F8FF0;
   font-size: 28px;
   font-style: normal;
   font-weight: 900;
@@ -117,7 +123,7 @@ h3 {
 }
 
 .site-name h2 {
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
@@ -159,7 +165,7 @@ h3 {
   line-height: 120%;
 }
 .description h2 {
-  color: #4f8ff0;
+  color: #4F8FF0;
   font-size: 56px;
   font-style: normal;
   font-weight: 600;
@@ -173,11 +179,11 @@ h3 {
   align-items: center;
   margin-top: 42px;
   gap: 10px;
-  border: #4f8ff0;
-  background: #4f8ff0;
+  border: #4F8FF0;
+  background: #4F8FF0;
 }
 .button:hover a {
-  color: #4f8ff0;
+  color: #4F8FF0;
 }
 .button a {
   color: #fff;
@@ -206,7 +212,7 @@ h3 {
 .slider__left__1 {
   width: 4px;
   height: 40px;
-  background: #4f8ff0;
+  background: #4F8FF0;
 }
 .slider__left__2 {
   width: 4px;
@@ -233,7 +239,6 @@ h3 {
 
 .service {
   width: 1320px;
-  max-height: 538px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -244,7 +249,7 @@ h3 {
 .service .line {
   width: 50px;
   height: 3px;
-  background: #4f8ff0;
+  background: #4F8FF0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,6 +258,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 .service__title h2 {
   color: #222;
@@ -307,7 +313,7 @@ h3 {
   color: #fff;
 }
 .service__card:hover {
-  background: #4f8ff0;
+  background: #4F8FF0;
   -webkit-text-emphasis-color: #fff;
           text-emphasis-color: #fff;
 }
@@ -338,6 +344,9 @@ h3 {
   width: 35px;
   height: 35px;
   flex-shrink: 0;
+}
+.card_icon path {
+  fill: #4F8FF0;
 }
 
 .card_icon:hover {
@@ -393,14 +402,12 @@ h3 {
 .button:hover {
   display: inline-flex;
   padding: 16px 24px;
-  align-items: flex-start;
   gap: 10px;
-  border: 2px solid #4f8ff0;
+  border: 2px solid #4F8FF0;
   background: #fff;
-  transition: 0.3s;
 }
 .button:hover p {
-  color: #4f8ff0;
+  color: #4F8FF0;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -420,7 +427,107 @@ h3 {
 
 .service__card:hover .card_text {
   transform: scale(1.04);
-  transition: 0.5s;
+  transition: 0.1s;
+}
+
+.lawfirm {
+  background: #fff;
+  padding-top: 80px;
+  margin-top: 80px;
+  padding-bottom: 80px;
+}
+.lawfirm__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.lawfirm__title {
+  display: flex;
+  width: 720px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.lawfirm__title h2 {
+  color: #222;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.lawfirm__title .blue {
+  color: #4F8FF0;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.lawfirm__title .line {
+  width: 50px;
+  height: 3px;
+  background: #4F8FF0;
+}
+.lawfirm__description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  width: 720px;
+  height: 264px;
+  gap: 20px;
+}
+.lawfirm__button {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  gap: 10px;
+}
+.lawfirm__button-l {
+  display: flex;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 2px solid #4F8FF0;
+  background: #4F8FF0;
+}
+.lawfirm__button-l p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%; /* 16.8px */
+  text-transform: uppercase;
+}
+.lawfirm__button-r {
+  display: flex;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 2px solid #e6e6e6;
+  background: #e6e6e6;
+}
+.lawfirm__button-r p {
+  color: #222;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%; /* 16.8px */
+  text-transform: uppercase;
+}
+
+.lawfirm__button-l:hover {
+  background: #fff;
+}
+.lawfirm__button-l:hover p {
+  color: #4F8FF0;
+}
+
+.lawfirm__button-r:hover {
+  border: 2px solid #e6e6e6;
+  background: #fff;
 }
 
 .contact-link {
@@ -434,8 +541,129 @@ h3 {
   height: 20px;
 }
 .contact-link__icon path {
-  fill: #4f8ff0;
+  fill: #4F8FF0;
 }
 .contact-link:hover {
-  color: #d9d9d9;
+  color: #4F8FF0;
+  text-decoration: underline;
+}
+
+.ourlawyers {
+  background: #f7f7f7;
+}
+.ourlawyers .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ourlawyers_title {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.ourlawyers_title h2 {
+  color: #222;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.ourlawyers_title .line {
+  width: 50px;
+  height: 3px;
+  background: #4F8FF0;
+}
+.ourlawyers_text {
+  margin-top: 24px;
+  color: #222;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 920px;
+}
+.ourlawyers_cards {
+  padding-top: 48px;
+  display: flex;
+  padding-bottom: 24px;
+  gap: 24px;
+  flex-direction: row;
+}
+.ourlawyers_card {
+  display: flex;
+  width: 312px;
+  padding-bottom: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background: #fff;
+  box-shadow: 2px 2px 12px 0px rgba(33, 33, 33, 0.12);
+  height: 100%;
+  position: relative;
+}
+.ourlawyers_card:hover .hover {
+  opacity: 1;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  padding: 0px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.ourlawyers_card .hover {
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+  opacity: 0;
+  position: absolute;
+  background: #fff;
+}
+.ourlawyers_card .hover_text {
+  display: flex;
+  width: 305px;
+  padding: 0px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 48px;
+}
+.ourlawyers_card .hover_text h3 {
+  color: #222;
+  text-align: center;
+  align-self: stretch;
+  white-space: 19px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.ourlawyers_card_text {
+  display: flex;
+  padding: 0px 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.ourlawyers_card h3 {
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.ourlawyers_card p {
+  color: #222;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  text-transform: lowercase;
 }/*# sourceMappingURL=style.css.map */

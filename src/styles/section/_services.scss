@@ -1,6 +1,5 @@
 .service {
   width: 1320px;
-  max-height: 538px;
   flex-shrink: 0;
 
   display: flex;
@@ -12,7 +11,7 @@
   & .line {
     width: 50px;
     height: 3px;
-    background: #4f8ff0;
+    background: $accent-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     & h2 {
       color: #222;
       text-align: center;
@@ -112,6 +112,10 @@
   width: 35px;
   height: 35px;
   flex-shrink: 0;
+   
+  & path {
+    fill: $accent-color;
+  }
 }
 
 .card_icon:hover {
@@ -169,14 +173,12 @@
   &:hover {
     display: inline-flex;
     padding: 16px 24px;
-    align-items: flex-start;
     gap: 10px;
-    border: 2px solid #4f8ff0;
+    border: 2px solid $accent-color;
     background: #fff;
-    transition: 0.3s;
 
     & p {
-      color:  #4f8ff0;
+      color: $accent-color;
       text-align: center;
       font-size: 14px;
       font-style: normal;
@@ -199,5 +201,5 @@
 
 .service__card:hover .card_text {
   transform: scale(1.04);
-  transition: 0.5s;
+  transition: 0.1s;
 }

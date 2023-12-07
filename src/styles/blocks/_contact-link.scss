@@ -15,6 +15,7 @@
 
 
   &:hover {
-    color: darken(#fff , 15) ;
+    color: $accent-color;
+    text-decoration: underline;
   }
 }

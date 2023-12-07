@@ -1,29 +1,32 @@
 .header {
-  &__top{
+  &__top {
     padding: 16px 0;
     background: #010101;
   }
 
+  & svg path {
+    fill: $accent-color;
+  }
 
-  &__wrapper{
+  &__wrapper {
     @include flex-row-sb-aic;
   }
 
-  
-
   &__contacts {
     @include flex-row-aic;
-    gap:24px;
+    gap: 24px;
   }
 
   &__callme {
-    color:$accent-color;
+    color: $accent-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
+    &:hover {
+      text-decoration: underline;
+    }
   }
-
 
   &__bottom {
     height: 112px;
@@ -32,14 +35,12 @@
     width: 100%;
   }
 
-
   & .hb {
     height: 112px;
   }
-
 }
 
-.header-nav  {
+.header-nav {
   display: inline-flex;
   align-items: flex-start;
   gap: 32px;
@@ -52,7 +53,6 @@
 .header-nav a:hover {
   color: $accent-color;
   text-decoration: underline;
-
 }
 
 .header-name {
@@ -80,17 +80,10 @@
 }
 
 .site-name h2 {
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 900;
   line-height: 150%;
   text-transform: lowercase;
 }
-
-
-// @media (max-width: 834px) {
-//     & .header-nav {
-      
-//     }
-// }
