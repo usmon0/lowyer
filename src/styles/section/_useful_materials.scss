@@ -1,0 +1,121 @@
+.useful_materials {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    & P {
+      color: $main-text-color;
+      font-family: Nunito Sans;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 150%;
+      text-transform: uppercase;
+    }
+
+    & .line {
+      width: 50px;
+      height: 3px;
+      background: $accent-color;
+    }
+  }
+
+  &_text {
+    margin-top: 24px;
+    color: $main-text-color;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 48px;
+
+    & img {
+      width: 100%;
+      background-size: cover;
+    }
+  }
+
+  &_card {
+    width: 424px;
+    height: 491px;
+
+    & .card_title {
+      color: $main-text-color;
+      align-self: stretch;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+    }
+
+    & .repost_date {
+      color: $main-text-color;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 120%;
+    }
+
+    & .card_text {
+      color: $main-text-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+
+
+  & .card_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+  }
+ 
+
+  & .b {
+    display: flex;
+    padding: 16px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 2px solid $accent-color;
+    background: $accent-color;
+    
+
+    & p {
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 120%;
+      text-transform: uppercase; 
+    }
+  }
+}
+
+.card_content {
+  margin-top: 24px;
+  display: flex;
+  width: 424px;
+  height: 163px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}

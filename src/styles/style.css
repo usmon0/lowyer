@@ -857,12 +857,125 @@ h3 {
   background: #4F8FF0;
   transform: rotate(110deg);
 }
+.reviews_top .reviews_slider svg path {
+  fill: #4F8FF0;
+  transition: 0.3s;
+}
 .reviews_top .reviews_slider .line:hover {
   background: #e6e6e6;
+  transition: 0.3s;
 }
 .reviews_top .left:hover svg path {
   fill: #e6e6e6;
+  transition: 0.3s;
 }
 .reviews_top .right:hover svg path {
   fill: #e6e6e6;
+  transition: 0.3s;
+}
+
+.useful_materials {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.useful_materials_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.useful_materials_title P {
+  color: #222;
+  font-family: Nunito Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.useful_materials_title .line {
+  width: 50px;
+  height: 3px;
+  background: #4F8FF0;
+}
+.useful_materials_text {
+  margin-top: 24px;
+  color: #222;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.useful_materials_cards {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 48px;
+}
+.useful_materials_cards img {
+  width: 100%;
+  background-size: cover;
+}
+.useful_materials_card {
+  width: 424px;
+  height: 491px;
+}
+.useful_materials_card .card_title {
+  color: #222;
+  align-self: stretch;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.useful_materials_card .repost_date {
+  color: #222;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+}
+.useful_materials_card .card_text {
+  color: #222;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.useful_materials .card_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+.useful_materials .b {
+  display: flex;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  border: 2px solid #4F8FF0;
+  background: #4F8FF0;
+}
+.useful_materials .b p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.card_content {
+  margin-top: 24px;
+  display: flex;
+  width: 424px;
+  height: 163px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
 }/*# sourceMappingURL=style.css.map */

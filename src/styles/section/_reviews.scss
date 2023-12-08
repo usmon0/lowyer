@@ -155,20 +155,28 @@
     & .line {
       width: 32px;
       height: 2px;
-      background: $accent-color;  
+      background: $accent-color;
       transform: rotate(110deg);
+    }
+
+    & svg path {
+      fill: $accent-color;
+      transition: 0.3s;
     }
 
     & .line:hover {
       background: #e6e6e6;
+      transition: 0.3s;
     }
   }
 
-  &  .left:hover svg path {
+  & .left:hover svg path {
     fill: #e6e6e6;
+    transition: 0.3s;
   }
 
-  &  .right:hover svg path {
+  & .right:hover svg path {
     fill: #e6e6e6;
+    transition: 0.3s;
   }
 }
