@@ -1,0 +1,174 @@
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(../images/mountaown.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &_title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    & p {
+      color: $main-text-color;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 150%;
+      text-transform: uppercase;
+    }
+    & .line {
+      width: 50px;
+      height: 3px;
+      background: $accent-color;
+    }
+  }
+
+  &_cards {
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+  }
+
+  &_card {
+    display: flex;
+    width: 648px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background: #fff;
+    box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
+
+    .clients_name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      flex: 1 0 0;
+    }
+
+    & .clients_info {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      align-self: stretch;
+    }
+
+    & .coment {
+      margin-top: 24px;
+      color: $main-text-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+}
+
+.buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+
+  &_blue {
+    display: flex;
+    padding: 16px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 2px solid $accent-color;
+    background: $accent-color;
+
+    & p {
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 120%;
+      text-transform: uppercase;
+    }
+  }
+
+  &_blue:hover {
+    display: inline-flex;
+    padding: 16px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 2px solid $accent-color;
+    background: #fff;
+
+    & p {
+      color: $accent-color;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 120%; /* 16.8px */
+      text-transform: uppercase;
+    }
+  }
+
+  &_grey {
+    display: flex;
+    padding: 16px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 2px solid #e6e6e6;
+    background: #e6e6e6;
+
+    & p {
+      color: $main-text-color;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 120%; /* 16.8px */
+      text-transform: uppercase;
+    }
+  }
+
+  &_grey:hover {
+    display: inline-flex;
+    padding: 16px 24px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 2px solid #e6e6e6;
+    background: #fff;
+  }
+}
+
+.reviews_top {
+  display: flex;
+  justify-content: space-between;
+
+  & .reviews_slider {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    & .line {
+      width: 32px;
+      height: 2px;
+      background: $accent-color;  
+      transform: rotate(110deg);
+    }
+
+    & .line:hover {
+      background: #e6e6e6;
+    }
+  }
+
+  &  .left:hover svg path {
+    fill: #e6e6e6;
+  }
+
+  &  .right:hover svg path {
+    fill: #e6e6e6;
+  }
+}
