@@ -112,7 +112,7 @@
   width: 35px;
   height: 35px;
   flex-shrink: 0;
-   
+
   & path {
     fill: $accent-color;
   }
@@ -165,17 +165,16 @@
 .button {
   display: flex;
   padding: 16px 24px;
-  align-items: flex-start;
-  gap: 10px;
+                gap: 10px;
   height: 49px;
   justify-content: center;
 
   &:hover {
-    display: inline-flex;
     padding: 16px 24px;
     gap: 10px;
     border: 2px solid $accent-color;
     background: #fff;
+    transition: 0.3s;
 
     & p {
       color: $accent-color;

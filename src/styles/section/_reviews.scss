@@ -57,6 +57,19 @@
       align-items: center;
       gap: 24px;
       align-self: stretch;
+
+      & .card_img {
+        width: 80px;
+        height: 80px;
+        border-radius: 100px;
+        overflow: hidden;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
     }
 
     & .coment {
@@ -102,6 +115,7 @@
     gap: 10px;
     border: 2px solid $accent-color;
     background: #fff;
+    transition: 0.3s;
 
     & p {
       color: $accent-color;
@@ -140,6 +154,7 @@
     gap: 10px;
     border: 2px solid #e6e6e6;
     background: #fff;
+    transition: 0.3s ease-in;
   }
 }
 
